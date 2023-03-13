@@ -1,0 +1,11 @@
+/**/.idea/
+
+/build
+/**/target/
+**/*.rs.bk
+
+*.tar.xz
+/toolchain/binutils-*
+/toolchain/build-*
+/toolchain/opt
+/toolchain/*.cookie
