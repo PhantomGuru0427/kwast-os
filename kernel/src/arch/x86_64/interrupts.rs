@@ -94,7 +94,7 @@ impl IDT {
         };
 
         unsafe {
-            llvm_asm!("lidt ($0)" :: "r" (&desc));
+            asm!("lidt ($0)", "r" (&desc));
         }
     }
 
