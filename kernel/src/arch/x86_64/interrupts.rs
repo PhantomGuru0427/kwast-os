@@ -94,7 +94,7 @@ impl IDT {
         };
 
         unsafe {
-            // asm!("lidt ($0)", "r"(&desc));
+            asm!("lidt ($0)", "r"(&desc));
         }
     }
 
